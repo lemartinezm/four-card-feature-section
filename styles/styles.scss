@@ -1,0 +1,99 @@
+// Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$very_dark_blue: hsl(234, 12%, 34%);
+$grayish_blue: hsl(229, 6%, 66%);
+$very_light_gray: hsl(0, 0%, 98%);
+
+html {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+p,
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 64px 32px;
+  h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 23px;
+    color: $very_dark_blue;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  p {
+    text-align: center;
+    color: $grayish_blue;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      border-radius: 6px;
+      border-top: 6px solid;
+      padding: 28px;
+      box-shadow: 0px 10px 30px -15px $very_dark_blue;
+      gap: 8px;
+
+      h2 {
+        font-size: 20px;
+        color: $very_dark_blue;
+      }
+
+      p {
+        text-align: left;
+        font-size: 13px;
+        line-height: 22px;
+      }
+
+      picture {
+        align-self: flex-end;
+        margin-top: 24px;
+      }
+    }
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    article:nth-child(1) {
+      border-color: $cyan;
+    }
+
+    >div {
+      article:nth-child(1) {
+        border-color: $red;
+      }
+  
+      article:nth-child(2) {
+        border-color: $orange;
+      }
+    }
+    
+    article:nth-child(3) {
+      border-color: $blue;
+    }
+  }
+}

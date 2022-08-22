@@ -1,0 +1,98 @@
+html {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+p,
+body {
+  margin: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding: 64px 32px;
+}
+main h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 23px;
+  color: hsl(234deg, 12%, 34%);
+}
+main h1 span {
+  font-weight: 600;
+}
+main p {
+  text-align: center;
+  color: hsl(229deg, 6%, 66%);
+}
+main .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+}
+main .cards-container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 6px;
+  border-top: 6px solid;
+  padding: 28px;
+  -webkit-box-shadow: 0px 10px 30px -15px hsl(234deg, 12%, 34%);
+          box-shadow: 0px 10px 30px -15px hsl(234deg, 12%, 34%);
+  gap: 8px;
+}
+main .cards-container article h2 {
+  font-size: 20px;
+  color: hsl(234deg, 12%, 34%);
+}
+main .cards-container article p {
+  text-align: left;
+  font-size: 13px;
+  line-height: 22px;
+}
+main .cards-container article picture {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 24px;
+}
+main .cards-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+main .cards-container article:nth-child(1) {
+  border-color: hsl(180deg, 62%, 55%);
+}
+main .cards-container > div article:nth-child(1) {
+  border-color: hsl(0deg, 78%, 62%);
+}
+main .cards-container > div article:nth-child(2) {
+  border-color: hsl(34deg, 97%, 64%);
+}
+main .cards-container article:nth-child(3) {
+  border-color: hsl(212deg, 86%, 64%);
+}/*# sourceMappingURL=styles.css.map */
