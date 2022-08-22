@@ -134,6 +134,7 @@ main .cards-container article:nth-child(3) {
     max-width: 650px;
     -ms-flex-item-align: center;
         align-self: center;
+    font-size: 19px;
   }
   main .cards-container {
     display: grid;
